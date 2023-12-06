@@ -1,0 +1,44 @@
+@import '../../shared/variables.scss';
+
+.dashboard-container {
+  display: flex;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+
+  .tabs {
+    display: flex;
+    align-items: center;
+
+    .tab {
+      cursor: pointer;
+      margin: auto;
+      padding: 2.5rem 3rem;
+
+      &-title {
+        color: #ececec;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        font-family: raleway,sans-serif;
+        transition: all .5s ease;
+        text-decoration: none;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+
+    a:hover {
+      .tab {
+        &-title {
+          color: #FFCF09;
+          transition: all .5s ease;
+          user-select: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="dashboard-container">
+  <div class="toktoktok-logo"></div>
+  <div class="tabs">
+    <ng-container *ngFor="let title of tabHeader">
+      <a class="tab" routerLink="/{{title}}">
+        <label class="tab-title">{{title}}</label>
+      </a>
+    </ng-container>
+  </div>
+</div>
