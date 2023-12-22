@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { TabTitles } from "src/shared/constants/dashboard/dashboard.constants";
+import { TabTitles } from "./../shared/constants/dashboard/dashboard.constants";
 
 export const routes: Routes = [
   { path: '', redirectTo: '/' + TabTitles.HOME, pathMatch: 'full' },

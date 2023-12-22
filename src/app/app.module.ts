@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { SharedModule } from 'src/shared/shared.module';
+import { FooterModule } from './footer/footer.module';
+import { SharedModule } from './../shared/shared.module';
 import { AppRouteModule } from './app.routes';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,6 +14,7 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     BrowserModule,
     SharedModule,
+    FooterModule,
     DashboardModule,
     AppRouteModule
   ],

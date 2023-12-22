@@ -7,6 +7,7 @@ import { TabTitles } from 'src/shared/constants/dashboard/dashboard.constants';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
+  readonly TabTitles = TabTitles;
   tabHeader: Array<TabTitles> = Object.values(TabTitles);
 
   routeTo(tab: TabTitles) {

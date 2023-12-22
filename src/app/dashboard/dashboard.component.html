@@ -1,10 +1,21 @@
-<div class="dashboard-container">
-  <div class="toktoktok-logo"></div>
-  <div class="tabs">
-    <ng-container *ngFor="let title of tabHeader">
-      <a class="tab" routerLink="/{{title}}">
-        <label class="tab-title">{{title}}</label>
-      </a>
-    </ng-container>
+<nav class="navbar fixed-top navbar-expand-lg" style="background: rgba(0, 0, 0, 0.3);">
+  <div class="container">
+    <a class="navbar-brand toktoktok-logo" href="{{TabTitles.HOME}}"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 0; outline: 0; box-shadow: none;">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse flex-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <ng-container *ngFor="let tab of tabHeader">
+          <li class="nav-item">
+            <a class="nav-link title" href="{{tab}}" [routerLinkActive]="['active']" [routerLink]="tab">{{tab | uppercase}}</a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
