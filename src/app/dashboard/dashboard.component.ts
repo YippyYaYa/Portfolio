@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TabTitles } from 'src/shared/constants/dashboard/dashboard.constants';
+import { DashboardService } from '../../shared/services/dashboard.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,33 +11,9 @@ export class DashboardComponent {
   readonly TabTitles = TabTitles;
   tabHeader: Array<TabTitles> = Object.values(TabTitles);
 
-  routeTo(tab: TabTitles) {
-    switch (tab) {
+  constructor(
+    
+  ) {
 
-      case TabTitles.HOME: {
-        break;
-      }
-
-      case TabTitles.ABOUT: {
-        break;
-      }
-
-      case TabTitles.GALLERY: {
-        break;
-      }
-
-      case TabTitles.SERVICES: {
-        break;
-      }
-
-      case TabTitles.CONTACTUS: {
-        break;
-      }
-
-      default: {
-        console.error({message: 'Invalid Tab Selected'});
-        break;
-      }
-    }
   }
 }

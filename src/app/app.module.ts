@@ -6,6 +6,7 @@ import { FooterModule } from './footer/footer.module';
 import { SharedModule } from './../shared/shared.module';
 import { AppRouteModule } from './app.routes';
 import { BrowserModule } from '@angular/platform-browser';
+import { HeaderModule } from './header/header.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BrowserModule } from '@angular/platform-browser';
     SharedModule,
     FooterModule,
     DashboardModule,
+    HeaderModule,
     AppRouteModule
   ],
   providers: [],

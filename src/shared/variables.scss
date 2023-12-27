@@ -4,6 +4,14 @@
   height: 7rem;
 }
 
+.home-background {
+  background: url('../assets/images/home.svg') no-repeat center center;;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .page-container {
   width: 100%;
 }

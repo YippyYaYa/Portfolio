@@ -1,0 +1,14 @@
+
+  <div class="home-background header-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="text-uppercase title">
+            <ng-container *ngIf="dashboardService.activeTab | async as title">
+              {{title}}
+            </ng-container>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>

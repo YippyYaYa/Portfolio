@@ -1,0 +1,15 @@
+@import '../../shared/variables.scss';
+
+.header-container {
+  padding: 20rem 0rem 15rem;
+  height: 50vh;
+  
+
+  .title {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 900;
+  }
+}
