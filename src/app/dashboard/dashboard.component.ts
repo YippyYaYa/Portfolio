@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { TabTitles } from 'src/shared/constants/dashboard/dashboard.constants';
-import { DashboardService } from '../../shared/services/dashboard.service';
+import { TabTitles } from '@shared/constants/dashboard/dashboard.constants';
 
 @Component({
   selector: 'app-dashboard',

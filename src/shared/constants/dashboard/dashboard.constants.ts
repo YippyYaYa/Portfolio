@@ -3,5 +3,5 @@ export enum TabTitles {
   ABOUT = 'About',
   SERVICES = 'Services',
   GALLERY = 'Gallery',
-  CONTACTUS = 'Contact us'
+  CONTACTUS = 'Contact Us'
 }

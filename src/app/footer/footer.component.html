@@ -1,5 +1,86 @@
-<div>
-  <iframe
-    src="https://maps.google.com/maps?q=TOKTOKTOK Carpentry+9 DEFU LANE 3+Hougang+Singapore+539441&amp;Roadmap&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<div class="home-background">
+  <div class="footer-container">
+    <div class="container">
+      <div class="row">
+        <!-- <iframe
+          src="https://maps.google.com/maps?q=TOKTOKTOK Carpentry+9 DEFU LANE 3+Hougang+Singapore+539441&amp;Roadmap&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+
+        <div class="col-md-3 col-sm-6">
+          <h1 class="text-uppercase title">About us</h1>
+          <p class="text" *ngIf="!showMore">
+            TokTokTok was founded in 2020 as the father and son decided to open up a workshop to service their long-time
+            customers. Driven by a passion to inherit his father's craft, Alan, the co-founder of the company, started
+            his apprenticeship at age 19....
+          </p>
+          <p class="text" *ngIf="showMore">TokTokTok was founded in 2020 as the father and son decided to open up a workshop to service their
+            long-time customers. Driven by a passion to inherit his father's craft, Alan, the co-founder of the company,
+            started his apprenticeship at age 19. With over 50 Years of craftsmanship combined, they strive to achieve
+            one goal: to craft beautiful, durable and timeless furniture for people.</p>
+          <button (click)="showMore=!showMore" class="read-more">
+            <ng-container *ngIf="!showMore">
+              Read More
+            </ng-container>
+            <ng-container *ngIf="showMore">
+              Show Less
+            </ng-container>
+          </button>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h1 class="text-uppercase title">Quick links</h1>
+          <ul class="footer-nav">
+            <li *ngFor="let header of tabHeader">
+              <a class="text-link" href="{{header}}">{{header}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h1 class="text-uppercase title">Reach us</h1>
+          <p class="text contact">
+            <i class="icon bi bi-geo-alt-fill"></i>
+            <br>
+            9 DEFU LANE 3,
+            <br>
+            Singapore,
+            <br>
+            539441
+          </p>
+          <p class="text contact">
+            <i class="icon bi bi-telephone-fill"></i>
+            Phone:
+            <br>
+            <a class="link" href="tel:8362 1562">8362 1562</a>
+          </p>
+          <p class="text contact">
+            <i class="icon bi bi-envelope"></i>
+            Email:
+            <br>
+            <a class="link" href="mailto:toktoktok.carpentry@gmail.com">toktoktok.carpentry@gmail.com</a>
+          </p>
+          <div>
+            <a class="link-icon" href="https://www.facebook.com/carpentryttt" target="_blank"><i
+                class="bi bi-facebook"></i></a>
+            <a class="link-icon" href="https://www.instagram.com/toktoktok_carpentry/" target="_blank"><i
+                class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h1 class="text-uppercase title">Find us</h1>
+          <iframe
+            src="https://maps.google.com/maps?q=TOKTOKTOK Carpentry+9 DEFU LANE 3+Hougang+Singapore+539441&amp;Roadmap&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="bi bi-c-circle"></i> 2022. TOKTOKTOK Carpentry. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
