@@ -1,1 +1,15 @@
 @import '../../../shared/variables.scss';
+@import '../page.component.scss';
+
+.title {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.grey {
+  color: $gray;
+}

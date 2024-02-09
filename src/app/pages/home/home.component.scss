@@ -1,1 +1,13 @@
 @import '../../../shared/variables.scss';
+
+.page-container {
+  padding: 0rem;
+}
+
+.home-container {
+  padding: 10rem 0rem;
+
+  ::ng-deep.page-container {
+    padding: 0rem;
+  }
+}
