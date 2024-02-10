@@ -5,6 +5,8 @@ import { SharedModule } from 'src/shared/shared.module';
 import { HomeRouteModule } from './home.route';
 import { AboutModule } from '../about/about.module';
 import { ServicesModule } from '../services/services.module';
+import { GalleryModule } from '../gallery/gallery.module';
+import { ContactUsModule } from '../contact-us/contact-us.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { ServicesModule } from '../services/services.module';
     HomeRouteModule,
     AboutModule,
     ServicesModule,
+    GalleryModule,
+    ContactUsModule
   ],
   providers: [],
   exports: [

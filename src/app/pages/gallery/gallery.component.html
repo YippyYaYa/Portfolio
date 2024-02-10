@@ -10,6 +10,9 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-md-4 p-3" *ngFor="let imageLink of imageLinks; index as i">
+        <img src="{{imageLink}}" class="animated-image img-thumbnail" alt="IMG{{i}}">
+      </div>
     </div>
   </div>
 </div>
